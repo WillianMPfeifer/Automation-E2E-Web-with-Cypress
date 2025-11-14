@@ -1,0 +1,36 @@
+{
+  "name": "cypress-bdd-arquiteture",
+  "version": "1.0.0",
+  "description": "template using cypress with bdd architecture in Javascript",
+  "main": "cypress.config.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "cypress:run:headed": "cypress run --headed",
+    "cypress:run:chrome": "cypress run --browser chrome",
+    "cypress:run:firefox": "cypress run --browser firefox",
+    "cypress:clean": "rimraf reports screenshots videos",
+    "cypress:report": "npx multiple-cucumber-html-reporter --config cucumber-html-report.js",
+    "test": "npm run cypress:run"
+  },
+  "keywords": [
+    "cypress",
+    "automation",
+    "bdd",
+    "cucumber",
+    "e2e-tests"
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "@WillianMP",
+  "license": "MIT",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^23.2.1",
+    "cypress": "^13.6.2",
+    "esbuild": "^0.25.0",
+    "multiple-cucumber-html-reporter": "^3.6.2",
+    "rimraf": "^5.0.5"
+  }
+}
