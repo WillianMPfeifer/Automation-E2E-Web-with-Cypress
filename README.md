@@ -188,6 +188,6 @@ Podendo ser estendido para CI/CD futuramente.
 
 ## 🤝 Autor
 
-**Willian Pfeifer (@WillianMP)**
+**Willian Pfeifer (@WillianMPfeifer)**
 
 Projeto criado como template reutilizável e moderno para automação de testes com Cypress + BDD. Se quiser evoluir ainda mais este template, posso te ajudar a criar as próximas partes!
