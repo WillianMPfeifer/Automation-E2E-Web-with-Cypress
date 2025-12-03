@@ -1,6 +1,6 @@
 {
   "name": "cypress-bdd-arquiteture",
-  "version": "1.0.0",
+  "version": "1.8.2",
   "description": "template using cypress with bdd architecture in Javascript",
   "main": "cypress.config.js",
   "scripts": {
@@ -22,9 +22,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/WillianMPfeifer/Automation-E2E-Web-with-Cypress.git"
   },
-  "author": "@WillianMP",
+  "author": "@WillianMPfeifer",
   "license": "MIT",
   "devDependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^23.2.1",
