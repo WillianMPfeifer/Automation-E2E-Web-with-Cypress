@@ -183,6 +183,9 @@ Podendo ser estendido para CI/CD futuramente.
 ✔ Steps limpos e simples
 ✔ Page objects com responsabilidade única
 ✔ Testes seguindo padrão Gherkin
+✔ Linguagem de negócios seguindo padrão PT-BR (Gherkin)
+✔ Linguagem de programação seguindo padrão US
+
 
 ---
 
