@@ -1,7 +1,6 @@
-import './commands/login-commands';
+import './commands/commands';
 
 Cypress.on("uncaught:exception", () => false);
-
 
 before(() => {
   cy.log("🔧 Iniciando suíte de testes");
