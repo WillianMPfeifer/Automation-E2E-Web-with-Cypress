@@ -1,6 +1,6 @@
 import {given, when, then} from 'cypress-cucumber-preprocessor/steps';
-import LoginPage from '../page-objects/login';
 
+import LoginPage from '../../page-objects/login/loginPOM';
 const loginPage = new LoginPage();
 
 given('o usuário está na página de login', () => {

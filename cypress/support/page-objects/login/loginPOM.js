@@ -1,4 +1,4 @@
-import { LoginElements } from "../elements/login-elements";
+import { LoginElements } from "../../elements/login/login-elements";
 
 class LoginPage {
   enterUsername(username) {
