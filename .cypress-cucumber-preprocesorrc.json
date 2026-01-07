@@ -9,7 +9,6 @@
     "output": "cypress/cucumber-messages/messages.ndjson"
   },
   "stepDefinitions": [
-    "cypress/support/steps/**/*.js",
-    "cypress/support/comuns/**/*.js"
+    "cypress/support/steps/**/*.{js,ts}"
   ]
 }

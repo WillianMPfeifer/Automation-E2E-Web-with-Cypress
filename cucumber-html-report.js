@@ -14,10 +14,10 @@ report.generate({
     },
   },
   customData: {
-    title: "Relatório de Testes BDD",
+    title: "Relatório de Testes Web Educação",
     data: [
       { label: "Projeto", value: "cypress-bdd-arquiteture" }, 
-      { label: "Release", value: "1.0.0" },
+      { label: "Release", value: "1.0.5" },
       { label: "Ambiente", value: "Homologação" },
     ],
   },
