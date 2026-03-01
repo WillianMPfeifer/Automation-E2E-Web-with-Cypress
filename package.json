@@ -1,6 +1,6 @@
 {
   "name": "cypress-bdd-arquiteture",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "template using cypress with bdd architecture in Javascript",
   "main": "cypress.config.js",
   "scripts": {
@@ -9,9 +9,10 @@
     "cy:run:headed": "cypress run --headed",
     "cy:run:chrome": "cypress run --browser chrome",
     "cy:run:firefox": "cypress run --browser firefox",
-    "cy:clean": "rimraf reports screenshots videos",
-    "cy:report": "npx multiple-cucumber-html-reporter --config cucumber-html-report.js",
-    "test": "npm run cy:run"
+    "cy:clean": "rimraf cypress/reports cypress/cucumber-json cypress/videos cypress/screenshots",
+    "cy:report": "node cucumber-html-report.js",
+    "cy:debug": "cross-env CYPRESS_VIDEO=true cypress run",
+    "test": "npm run cy:clean && npm run cy:run && npm run cy:report"
   },
   "keywords": [
     "cypress",
@@ -27,24 +28,13 @@
   "author": "@WillianMPfeifer",
   "license": "MIT",
 
-  "cypress-cucumber-preprocessor": {
-      "nonGlobalStepDefinitions": false,
-      "stepDefinitions": "cypress/support/steps/**/*.js",
-      "messages": {
-        "enabled": false
-      },
-      "json": {
-        "enabled": false
-      },
-      "html": {
-        "enabled": false
-      }
-    },
-
   "devDependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^23.2.1",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.2.8",
-    "cypress": "^13.6.2",
+    "cross-env": "^7.0.3",
+    "cypress": "^15.11.0",
+    "cypress-plugin-api": "^2.11.2",
+    "cypress-terminal-report": "^7.3.3",
     "esbuild": "^0.25.0",
     "multiple-cucumber-html-reporter": "^3.6.2",
     "rimraf": "^5.0.5"

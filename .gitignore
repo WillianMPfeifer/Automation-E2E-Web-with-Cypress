@@ -37,6 +37,10 @@ logs/
 *.log
 *.tmp
 
+# Reports
+.cucumber-json/
+results.json
+.reports/
 
 # Editor / IDE
 .vscode/
@@ -54,3 +58,6 @@ temp/
 
 # Config do Cucumber
 .cucumber/
+
+# Arquivos de ambiente do Cypress
+cypress.env.json
